@@ -11,11 +11,13 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Our_Recipes></Our_Recipes>
-      <div className='flex '>
-        <Recipes></Recipes>
-        <Orders></Orders>
-      </div>
+      <main className='container mx-auto'>
+        <Our_Recipes></Our_Recipes>
+        <div className='md:flex  border rounded-lg'>
+          <Recipes></Recipes>
+          <Orders></Orders>
+        </div>
+      </main>
     </>
   )
 }
