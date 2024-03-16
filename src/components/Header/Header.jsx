@@ -1,7 +1,9 @@
 import { CgProfile } from "react-icons/cg";
+import './Header.css';
+
 const Header = () => {
     return (
-        <div>
+        <div className="container mx-auto">
             <h1 className='text-4xl font-bold'>Chefs Table</h1>
 
             {/* Nav Bar */}
@@ -33,6 +35,19 @@ const Header = () => {
                         <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
                     </div>
                     <button className="btn rounded-full bg-green-500 text-black"><CgProfile /></button>
+                </div>
+            </div>
+
+            {/* Banner */}
+            <div className="banner ">
+                <div className="banner-content">
+                    <h1 className=" md:text-4xl font-bold text-white my-4">Discover an exceptional cooking <br />class tailored for you!</h1>
+                    <p>Discover a world of culinary delights. From exquisite dishes to welcoming ambiance, every moment is crafted to enchant. Join us for an unforgettable dining experience.</p>
+                    <div className="my-2">
+                        <button class="btn btn-accent mx-2 rounded-full">Accent</button>
+                        <button class="btn btn-outline mx-2 rounded-full">Default</button>
+
+                    </div>
                 </div>
             </div>
         </div>
