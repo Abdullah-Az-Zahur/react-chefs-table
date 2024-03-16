@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import { CiClock2 } from "react-icons/ci";
 import { FaGripfire } from "react-icons/fa";
-const Recipe = ({ recipe }) => {
-    const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories} = recipe
+
+const Recipe = ({ recipe, handleRecipeToAddOrders }) => {
+    const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = recipe
     return (
         <div>
             <div className="card bg-base-100 shadow-xl">
@@ -22,7 +23,10 @@ const Recipe = ({ recipe }) => {
                         <p className='flex gap-2 items-center'><FaGripfire /><span className='text-gray-400'>{calories}</span></p>
                     </div>
                     <div className="card-actions justify-start">
-                        <button className="btn btn-primary">Want to Cook</button>
+                        <button
+                            onClick={() => handleRecipeToAddOrders(recipe)}
+                            className="btn btn-primary">Want to Cook
+                        </button>
                     </div>
                 </div>
             </div>
@@ -32,7 +36,8 @@ const Recipe = ({ recipe }) => {
 };
 
 Recipe.propTypes = {
-    recipe: PropTypes.object.isRequired
+    recipe: PropTypes.object.isRequired,
+    handleRecipeToAddOrders: PropTypes.func
 }
 
 export default Recipe;
