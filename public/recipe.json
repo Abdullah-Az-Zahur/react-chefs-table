@@ -1,0 +1,91 @@
+[
+    {
+        "recipe_image": "https://i.ibb.co/0V6SZH9/Chicken-Stir-Fry.jpg",
+        "recipe_id": "1",
+        "recipe_name": "Chicken Stir Fry",
+        "short_description": "A delicious and healthy stir-fry recipe with chicken and vegetables.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaves",
+            "400 g mushroom"
+        ],
+        "preparing_time": "30 min",
+        "calories": "320 calories"
+    },
+    {
+        "recipe_image": "https://i.ibb.co/0V6SZH9/Chicken-Stir-Fry.jpghttps://i.ibb.co/Msc3Dmp/Vegetable-Pasta.jpg",
+        "recipe_id": "2",
+        "recipe_name": "Vegetable Pasta",
+        "short_description": "A simple and tasty pasta dish loaded with fresh vegetables.",
+        "ingredients": [
+            "300 g pasta",
+            "2 bell peppers",
+            "1 zucchini",
+            "1 onion",
+            "250 g cherry tomatoes"
+        ],
+        "preparing_time": "25 min",
+        "calories": "250 calories"
+    },
+    {
+        "recipe_image": "https://i.ibb.co/d60dNYM/Grilled-Salmon.jpg",
+        "recipe_id": "3",
+        "recipe_name": "Grilled Salmon",
+        "short_description": "Juicy grilled salmon fillets with a flavorful herb marinade.",
+        "ingredients": [
+            "4 salmon fillets",
+            "2 tbsp olive oil",
+            "1 lemon",
+            "2 cloves garlic",
+            "Salt and pepper"
+        ],
+        "preparing_time": "20 min",
+        "calories": "350 calories"
+    },
+    {
+        "recipe_image": "https://i.ibb.co/LZPcmpM/Quinoa-Salad.jpg",
+        "recipe_id": "4",
+        "recipe_name": "Quinoa Salad",
+        "short_description": "A refreshing and nutritious salad with quinoa, vegetables, and a tangy dressing.",
+        "ingredients": [
+            "1 cup quinoa",
+            "1 cucumber",
+            "1 bell pepper",
+            "1/2 red onion",
+            "100 g feta cheese"
+        ],
+        "preparing_time": "15 min",
+        "calories": "200 calories"
+    },
+    {
+        "recipe_image": "https://i.ibb.co/cv1qY44/Vegetarian-Chili.webp",
+        "recipe_id": "5",
+        "recipe_name": "Vegetarian Chili",
+        "short_description": "Hearty and satisfying chili packed with beans, vegetables, and spices.",
+        "ingredients": [
+            "2 cans kidney beans",
+            "1 can diced tomatoes",
+            "1 bell pepper",
+            "1 onion",
+            "2 cloves garlic"
+        ],
+        "preparing_time": "40 min",
+        "calories": "280 calories"
+    },
+    {
+        "recipe_image": "https://i.ibb.co/qk1d2RR/Mango-Salsa-Chicken.jpg",
+        "recipe_id": "6",
+        "recipe_name": "Mango Salsa Chicken",
+        "short_description": "Tender chicken breasts topped with fresh mango salsa for a burst of tropical flavor.",
+        "ingredients": [
+            "4 chicken breasts",
+            "2 ripe mangoes",
+            "1 red onion",
+            "1 jalapeno pepper",
+            "1 lime"
+        ],
+        "preparing_time": "35 min",
+        "calories": "300 calories"
+    }
+]
