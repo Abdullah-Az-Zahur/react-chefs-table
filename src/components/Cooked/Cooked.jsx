@@ -1,11 +1,12 @@
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const Order = ({ order, idx, handlePreparingBtn }) => {
-    const { recipe_name, preparing_time, calories } = order;
-    return (
-        <div>
-            {/* table */}
-            <div className="overflow-x-auto">
+const Cooked = ({cooked, idx}) => {
+    const {recipe_name, preparing_time, calories} = cooked;
+  return (
+    <div>
+      {/* table */}
+      <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
                     <thead>
@@ -23,18 +24,17 @@ const Order = ({ order, idx, handlePreparingBtn }) => {
                             <td>{recipe_name}</td>
                             <td>{preparing_time} Min</td>
                             <td>{calories} Calories</td>
-                            <button onClick={()=> handlePreparingBtn(order) } className="btn btn-accent">Preparing</button>
+                            
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
-    );
-};
+    </div>
+  )
+}
 
-Order.propTypes = {
-    order: PropTypes.object.isRequired
+Cooked.propTypes = {
 
 }
 
-export default Order;
+export default Cooked

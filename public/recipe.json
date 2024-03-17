@@ -10,8 +10,8 @@
             "200 g basil leaves",
             "400 g mushroom"
         ],
-        "preparing_time": "30 min",
-        "calories": "320 calories"
+        "preparing_time": "30",
+        "calories": "320"
     },
     {
         "recipe_image": "https://i.ibb.co/qm1fpPQ/Vegetable-Pasta.jpg",
@@ -25,8 +25,8 @@
             "1 onion",
             "250 g cherry tomatoes"
         ],
-        "preparing_time": "25 min",
-        "calories": "250 calories"
+        "preparing_time": "25",
+        "calories": "250"
     },
     {
         "recipe_image": "https://i.ibb.co/d60dNYM/Grilled-Salmon.jpg",
@@ -40,8 +40,8 @@
             "2 cloves garlic",
             "Salt and pepper"
         ],
-        "preparing_time": "20 min",
-        "calories": "350 calories"
+        "preparing_time": "20",
+        "calories": "350 "
     },
     {
         "recipe_image": "https://i.ibb.co/LZPcmpM/Quinoa-Salad.jpg",
@@ -55,8 +55,8 @@
             "1/2 red onion",
             "100 g feta cheese"
         ],
-        "preparing_time": "15 min",
-        "calories": "200 calories"
+        "preparing_time": "15",
+        "calories": "200"
     },
     {
         "recipe_image": "https://i.ibb.co/cv1qY44/Vegetarian-Chili.webp",
@@ -70,8 +70,8 @@
             "1 onion",
             "2 cloves garlic"
         ],
-        "preparing_time": "40 min",
-        "calories": "280 calories"
+        "preparing_time": "40",
+        "calories": "280"
     },
     {
         "recipe_image": "https://i.ibb.co/qk1d2RR/Mango-Salsa-Chicken.jpg",
@@ -85,7 +85,7 @@
             "1 jalapeno pepper",
             "1 lime"
         ],
-        "preparing_time": "35 min",
-        "calories": "300 calories"
+        "preparing_time": "35",
+        "calories": "300"
     }
 ]

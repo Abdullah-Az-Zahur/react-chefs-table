@@ -19,8 +19,8 @@ const Recipe = ({ recipe, handleRecipeToAddOrders }) => {
                         }
                     </p>
                     <div className='flex'>
-                        <p className='flex gap-2 items-center'><CiClock2 /><span className='text-gray-400'>{preparing_time}</span></p>
-                        <p className='flex gap-2 items-center'><FaGripfire /><span className='text-gray-400'>{calories}</span></p>
+                        <p className='flex gap-2 items-center'><CiClock2 /><span className='text-gray-400'>{preparing_time} Min</span></p>
+                        <p className='flex gap-2 items-center'><FaGripfire /><span className='text-gray-400'>{calories} Calories</span></p>
                     </div>
                     <div className="card-actions justify-start">
                         <button
