@@ -6,7 +6,7 @@ const Orders = ({ recipes, handlePreparingBtn }) => {
         <div className="w-full">
             {/* want to cook */}
             <div>
-                <h1>Want to cook: {recipes.length}</h1>
+                <h1 className='text-center my-4'>Want to cook: {recipes.length}</h1>
                 {
                     recipes.map((order, idx) => <Order 
                     key={idx} order={order} idx={idx}
@@ -21,7 +21,8 @@ const Orders = ({ recipes, handlePreparingBtn }) => {
 };
 
 Orders.propTypes = {
-    recipes: PropTypes.object.isRequired
+    recipes: PropTypes.object.isRequired,
+    handlePreparingBtn : PropTypes.func
 
 }
 

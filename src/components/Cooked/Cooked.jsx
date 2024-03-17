@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 const Cooked = ({cooked, idx}) => {
     const {recipe_name, preparing_time, calories} = cooked;
-    console.log('cooked',cooked)
   return (
     <div>
       {/* table */}

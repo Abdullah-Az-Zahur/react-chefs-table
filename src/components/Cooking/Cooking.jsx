@@ -1,10 +1,10 @@
+import PropTypes from 'prop-types';
 import Cooked from "../Cooked/Cooked";
-
 const Cooking = ({ cookingItem }) => {
     return (
         <div>
-            <hr />
-            <h1>Currently cooking: {cookingItem.length}</h1>
+            <hr  className="my-5"/>
+            <h1 className="text-center">Currently cooking: {cookingItem.length}</h1>
             {
                 cookingItem.map((cooked, idx) => <Cooked 
                 key={idx}
@@ -15,5 +15,9 @@ const Cooking = ({ cookingItem }) => {
         </div>
     );
 };
+
+Cooking.propTypes = {
+    cookingItem: PropTypes.array
+}
 
 export default Cooking;

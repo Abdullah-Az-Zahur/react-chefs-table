@@ -33,7 +33,9 @@ const Order = ({ order, idx, handlePreparingBtn }) => {
 };
 
 Order.propTypes = {
-    order: PropTypes.object.isRequired
+    order: PropTypes.object.isRequired,
+    idx: PropTypes.number,
+    handlePreparingBtn: PropTypes.func
 
 }
 

@@ -7,6 +7,9 @@ import Our_Recipes from './components/Our_Recipes/Our_Recipes'
 import Recipes from './components/Recipes/Recipes'
 import Cooking from './components/Cooking/Cooking'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   const [recipes, setRecipes] = useState([]);
 
@@ -16,21 +19,17 @@ function App() {
       return item.recipe_id === order.recipe_id;
     });
 
-    console.log('recipes', recipes)
-    console.log('click order', order)
-    console.log('found item', foundItem)
     if (!foundItem) {
       const newRecipes = [...recipes, order];
       setRecipes(newRecipes);
     }
     else {
-        <div className="toast toast-top toast-center">
-          <div className="alert alert-info">
-            <span>New mail arrived.</span>
-          </div>
-        </div>
+      notify();
+      console.log('inside toast')
     }
   };
+
+  const notify = () => toast('This dish is already in your order list');
 
   // cooking items
   const [cookingItem, setCookingItem] = useState([]);
@@ -43,6 +42,7 @@ function App() {
   const handlePreparingBtn = (id) => {
     removeRecipes(id);
     handleCookingItem(id);
+    
   };
 
   const removeRecipes = (id) => {
@@ -67,6 +67,7 @@ function App() {
             <Cooking cookingItem={cookingItem}></Cooking>
           </div>
         </div>
+        <ToastContainer></ToastContainer>
       </main>
     </>
   )
