@@ -7,32 +7,50 @@ import Our_Recipes from './components/Our_Recipes/Our_Recipes'
 import Recipes from './components/Recipes/Recipes'
 import Cooking from './components/Cooking/Cooking'
 
+
+
 function App() {
   const [recipes, setRecipes] = useState([]);
 
   const handleRecipeToAddOrders = order => {
-    const newRecipes = [...recipes, order];
-    setRecipes(newRecipes);
-  }
+    // item find
+    const foundItem = recipes.find(item => {
+      return item.recipe_id === order.recipe_id;
+    });
 
+    console.log('recipes', recipes)
+    console.log('click order', order)
+    console.log('found item', foundItem)
+    if (!foundItem) {
+      const newRecipes = [...recipes, order];
+      setRecipes(newRecipes);
+    }
+    else {
+      <div className="toast toast-top toast-center">
+        <div className="alert alert-info">
+          <span>New mail arrived.</span>
+        </div>
+      </div>
+    }
+  };
 
+  // cooking items
   const [cookingItem, setCookingItem] = useState([]);
 
   const handleCookingItem = (order) => {
     const newOrders = [...cookingItem, order]
     setCookingItem(newOrders);
-    console.log('cooking',cookingItem)
-  }
+  };
 
   const handlePreparingBtn = (id) => {
     removeRecipes(id);
     handleCookingItem(id);
-  }
+  };
 
   const removeRecipes = (id) => {
     const remainingRecipes = recipes.filter(recipe => recipe.recipe_id !== id.recipe_id);
     setRecipes(remainingRecipes);
-  }
+  };
 
 
 

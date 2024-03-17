@@ -15,7 +15,7 @@ const Recipe = ({ recipe, handleRecipeToAddOrders }) => {
                     <h3>Ingredients: {ingredients.length}</h3>
                     <p>
                         {
-                            ingredients.map(ingredient => <ul> <span className='text-gray-400'>{ingredient}</span></ul>)
+                            ingredients.map((ingredient, idx) => <ul key={idx}> <span className='text-gray-400'>{ingredient}</span></ul>)
                         }
                     </p>
                     <div className='flex'>
