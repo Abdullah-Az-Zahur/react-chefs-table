@@ -7,8 +7,6 @@ import Our_Recipes from './components/Our_Recipes/Our_Recipes'
 import Recipes from './components/Recipes/Recipes'
 import Cooking from './components/Cooking/Cooking'
 
-
-
 function App() {
   const [recipes, setRecipes] = useState([]);
 
@@ -26,11 +24,11 @@ function App() {
       setRecipes(newRecipes);
     }
     else {
-      <div className="toast toast-top toast-center">
-        <div className="alert alert-info">
-          <span>New mail arrived.</span>
+        <div className="toast toast-top toast-center">
+          <div className="alert alert-info">
+            <span>New mail arrived.</span>
+          </div>
         </div>
-      </div>
     }
   };
 
