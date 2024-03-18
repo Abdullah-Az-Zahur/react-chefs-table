@@ -6,13 +6,21 @@ import Orders from './components/Orders/Orders'
 import Our_Recipes from './components/Our_Recipes/Our_Recipes'
 import Recipes from './components/Recipes/Recipes'
 import Cooking from './components/Cooking/Cooking'
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+
+  // data store
   const [recipes, setRecipes] = useState([]);
 
+  const [cookingItem, setCookingItem] = useState([]);
+
+  const [preparingTime, setPreparingTime] = useState(0);
+
+  const [calorie, setCalorie] = useState(0);
+
+  // Functions
   const handleRecipeToAddOrders = order => {
     // item find
     const foundItem = recipes.find(item => {
@@ -29,11 +37,10 @@ function App() {
     }
   };
 
+
   const notify = () => toast('This dish is already in your order list');
 
   // cooking items
-  const [cookingItem, setCookingItem] = useState([]);
-
   const handleCookingItem = (order) => {
     const newOrders = [...cookingItem, order]
     setCookingItem(newOrders);
@@ -42,7 +49,8 @@ function App() {
   const handlePreparingBtn = (id) => {
     removeRecipes(id);
     handleCookingItem(id);
-    
+    handlePreparingTime(id);
+    handleCalories(id);
   };
 
   const removeRecipes = (id) => {
@@ -50,7 +58,17 @@ function App() {
     setRecipes(remainingRecipes);
   };
 
+  const handlePreparingTime = time => {
+    const { preparing_time } = time;
+    const newTime = preparingTime + preparing_time;
+    setPreparingTime(newTime);
+  }
 
+  const handleCalories = id => {
+    const { calories } = id;
+    const newCalorie = calorie + calories;
+    setCalorie(newCalorie)
+  }
 
   return (
     <>
@@ -64,7 +82,11 @@ function App() {
               recipes={recipes}
               handlePreparingBtn={handlePreparingBtn}
             ></Orders>
-            <Cooking cookingItem={cookingItem}></Cooking>
+            <Cooking
+              cookingItem={cookingItem}
+              preparingTime={preparingTime}
+              calorie={calorie}
+            ></Cooking>
           </div>
         </div>
         <ToastContainer></ToastContainer>

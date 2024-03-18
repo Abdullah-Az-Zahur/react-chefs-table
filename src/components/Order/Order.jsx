@@ -7,15 +7,8 @@ const Order = ({ order, idx, handlePreparingBtn }) => {
             {/* table */}
             <div className="overflow-x-auto">
                 <table className="table">
-                    {/* head */}
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Time</th>
-                            <th>Calories</th>
-                        </tr>
-                    </thead>
+                   
+                    
                     <tbody>
                         {/* row 1 */}
                         <tr>

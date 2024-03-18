@@ -7,10 +7,25 @@ const Orders = ({ recipes, handlePreparingBtn }) => {
             {/* want to cook */}
             <div>
                 <h1 className='text-center my-4'>Want to cook: {recipes.length}</h1>
+                {/* table */}
+                <div className="overflow-x-auto">
+                    <table className="table">
+                        {/* head */}
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Time</th>
+                                <th>Calories</th>
+                            </tr>
+                        </thead>
+                        
+                    </table>
+                </div>
                 {
-                    recipes.map((order, idx) => <Order 
-                    key={idx} order={order} idx={idx}
-                    handlePreparingBtn={handlePreparingBtn}
+                    recipes.map((order, idx) => <Order
+                        key={idx} order={order} idx={idx}
+                        handlePreparingBtn={handlePreparingBtn}
                     ></Order>)
                 }
             </div>
@@ -22,7 +37,7 @@ const Orders = ({ recipes, handlePreparingBtn }) => {
 
 Orders.propTypes = {
     recipes: PropTypes.object.isRequired,
-    handlePreparingBtn : PropTypes.func
+    handlePreparingBtn: PropTypes.func
 
 }
 
